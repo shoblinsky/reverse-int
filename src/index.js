@@ -5,7 +5,7 @@ module.exports = function reverse(n) {
   for (let i = 0; i < initString.length; i++) {
     result = `${initString[i]}${result}`
   }
-  return Number(result)
+  return result
 };
 
 reverse(120)
