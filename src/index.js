@@ -1,10 +1,11 @@
 module.exports = function reverse(n) {
-  let initString = n.toString
+  let initString = n.toString()
   let result = '';
-  let i = 0;
-  while (i < initString.length) {
-    result = `${result}${initString[i]}`
-    i += 1
+
+  for (let i = 0; i < initString.length; i++) {
+    result = `${initString[i]}${result}`
   }
-  return result
+  return Number(result)
 };
+
+reverse(120)
